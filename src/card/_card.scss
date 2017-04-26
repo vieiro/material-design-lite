@@ -1,5 +1,6 @@
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
+ * Modifications Copyright 2017 Antonio Vieiro. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -111,4 +112,42 @@
   position: absolute;
   right: 16px;
   top: 16px;
+}
+
+.mdl-card__primary {
+    padding: 16px;
+
+    .mdl-card__subtitle {
+      align-self: flex-start;
+      color: inherit;
+      display: block;
+      display: flex;
+      font-size: $card-subtitle-font-size;
+      font-weight: $card-title-text-font-weight;
+      color: $card-subtitle-color;
+      line-height: normal;
+      overflow: hidden;
+      transform-origin: $card-title-text-transform-origin-x $card-title-text-transform-origin-y;
+      margin: 0 0 $card-title-subtitle-padding 0;
+    }
+
+    .mdl-card__title {
+      align-self: flex-start;
+      color: inherit;
+      display: block;
+      display: flex;
+      font-size: $card-title-font-size;
+      font-weight: $card-title-text-font-weight;
+      line-height: normal;
+      overflow: hidden;
+      transform-origin: $card-title-text-transform-origin-x $card-title-text-transform-origin-y;
+      margin: 0 0 $card-title-subtitle-padding 0;
+      padding: 0;
+    }
+
+    .mdl-card__text {
+        padding: 0;
+        margin: 0;
+    }
+
 }

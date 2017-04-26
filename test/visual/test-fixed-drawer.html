@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Visual tests</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <base href="../../">
+        <link rel="stylesheet" href="dist/material.css">
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+        mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Title</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                    mdl-textfield--floating-label mdl-textfield--align-right">
+                        <label class="mdl-button mdl-js-button mdl-button--icon"
+                               for="fixed-header-drawer-exp">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="sample"
+                                                                            id="fixed-header-drawer-exp">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Title</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" >Link</a>
+                    <a class="mdl-navigation__link" >Link</a>
+                    <a class="mdl-navigation__link" >Link</a>
+                    <a class="mdl-navigation__link" >Link</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet" style='background: #cfcfcf; padding: 8px; height: 120px;' >6 (8 tablet)</div>
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet" style='background: #cfcfcf; padding: 8px; height: 120px;'> 4 (6 tablet)</div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone" style='background: #cfcfcf; padding: 8px; height: 120px;'> 2 (4 phone)</div>
+                </div>
+            </div>
+            </main>
+        </div>
+        <script src="dist/material.js"></script>
+    </body>
+</html>
