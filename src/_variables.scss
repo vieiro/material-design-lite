@@ -43,6 +43,7 @@
  * -----Data table
  * -----Dialog
  * -----Snackbar
+ * -----Selectfield
  * -----Tooltip
  * -----Chip
  *
@@ -445,7 +446,7 @@ $checkbox-ripple-size: $checkbox-label-height * 1.5;
 /* CARD */
 
 /* Card dimensions */
-$card-width: 330px !default;
+$card-width: 304px !default;
 $card-height: 200px !default;
 $card-font-size: 16px !default;
 $card-title-font-size: 24px !default;
@@ -524,6 +525,9 @@ $shadow-key-umbra-opacity: 0.2 !default;
 $shadow-key-penumbra-opacity: 0.14 !default;
 $shadow-ambient-shadow-opacity: 0.12 !default;
 
+/* FLOW GRID */
+$flow-grid-cell-width: 320px;
+
 /* GRID */
 
 $grid-desktop-columns: 12 !default;
@@ -587,6 +591,21 @@ $snackbar-action-color: unquote("rgb(#{$color-accent})") !default;
 /* TOOLTIP */
 $tooltip-font-size: 10px !default;
 $tooltip-font-size-large: 14px !default;
+
+/* SELECTFIELD */
+$selectfield-font-size: 16px !default;
+$selectfield-padding: 4px !default;
+$selectfield-vertical-spacing: 20px !default;
+
+$selectfield-floating-label-fontsize: 12px !default;
+
+$selectfield-background-color: transparent !default;
+$selectfield-label-color: unquote("rgba(#{$color-black}, 0.26)") !default;
+$selectfield-bottom-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+$selectfield-highlight-color: unquote("rgb(#{$color-primary})") !default;
+$selectfield-disabled-color: $selectfield-bottom-border-color !default;
+$selectfield-disabled-text-color: $selectfield-label-color !default;
+$selectfield-error-color: unquote("rgb(222, 50, 38)") !default;
 
 /* CHIP */
 $chip-bg-color: rgb(222, 222, 222) !default;

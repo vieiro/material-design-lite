@@ -93,7 +93,7 @@
 
 @media (max-width: $grid-tablet-breakpoint - 1) {
   .mdl-grid {
-    padding: $grid-phone-margin - ($grid-phone-gutter / 2);
+    padding: 0;
   }
 
   .mdl-cell {
@@ -229,3 +229,70 @@
     }
   }
 }
+
+/// MDL FLOW GRID ///
+
+.mdl-flow-grid {
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+.mdl-flow-grid__center {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.mdl-flow-cell {
+    display: inline-block;
+    vertical-align: top;
+    width: $flow-grid-cell-width - $grid-phone-gutter;
+    padding: $grid-phone-gutter / 2;
+    text-align: left;
+}
+
+.mdl-flow-header {
+    display: inline-block;
+    width: calc( 100% - #{$grid-phone-gutter});
+    padding: $grid-phone-gutter / 2;
+    text-align: left;
+    @include typo-subhead;
+}
+
+////////// Phone //////////
+
+@media (max-width: $grid-tablet-breakpoint - 1) {
+  .mdl-flow-cell--hide-phone {
+    display: none !important;
+  }
+}
+
+////////// Tablet //////////
+
+@media (min-width: $grid-tablet-breakpoint) and (max-width: $grid-desktop-breakpoint - 1) {
+  .mdl-flow-grid {
+    padding: ($grid-tablet-gutter / 2);
+  }
+  .mdl-flow-grid__center {
+    padding: ($grid-tablet-gutter / 2);
+  }
+  .mdl-flow-cell--hide-tablet {
+    display: none !important;
+  }
+}
+
+////////// Desktop //////////
+
+@media (min-width: $grid-desktop-breakpoint) {
+  .mdl-flow-grid {
+    padding: ($grid-desktop-gutter / 2);
+  }
+  .mdl-flow-grid__center {
+    padding: ($grid-desktop-gutter / 2);
+  }
+  .mdl-flow-cell--hide-desktop {
+    display: none !important;
+  }
+}
+
+
