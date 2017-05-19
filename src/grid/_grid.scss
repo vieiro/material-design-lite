@@ -295,4 +295,50 @@
   }
 }
 
+/* Responsive visibilities */
+@media (max-width: $grid-tablet-breakpoint - 1) {
+    .mdl-visible--small-only {
+        
+    }
+    .mdl-visible--small-and-tablet {
+    }
+    .mdl-visible--tablet-and-desktop {
+        display: none;
+    }
+    .mdl-visible--tablet-only {
+        display: none;
+    }
+    .mdl-visible--desktop-only {
+        display: none;
+    }
+}
+@media (min-width: $grid-tablet-breakpoint) and (max-width: $grid-desktop-breakpoint - 1) {
+    .mdl-visible--small-only {
+        display: none;
+    }
+    .mdl-visible--small-and-tablet {
+    }
+    .mdl-visible--tablet-only {
+    }
+    .mdl-visible--tablet-and-desktop {
+    }
+    .mdl-visible--desktop-only {
+        display: none;
+    }
+}
+@media (min-width: $grid-desktop-breakpoint) {
+    .mdl-visible--small-only {
+        display: none;
+    }
+    .mdl-visible--small-and-tablet {
+        display: none;
+    }
+    .mdl-visible--tablet-only {
+        display: none;
+    }
+    .mdl-visible--tablet-and-desktop {
+    }
+    .mdl-visible--desktop-only {
+    }
+}
 
